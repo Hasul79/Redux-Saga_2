@@ -6,6 +6,8 @@ function usersFetch() {
     return fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json());   
 }
 
+
+
 //2.
  function* workGetUsersFetch() {
     const users = yield call(usersFetch);

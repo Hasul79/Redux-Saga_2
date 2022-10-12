@@ -10,7 +10,13 @@ function App() {
     <div className='App'>
        <button onClick={() => dispatch(getUsersFetch())}>Get Users</button> 
       
-      <div>Users: {users.map((user => (<div>{user.name}</div>)))}</div>
+      <div>Users: {users.map((user => (
+      <div>{ user.id}.
+           {user.name}․․
+           {/* [{ user.username}__
+           { user.email}__
+           { user.phone}] */}
+           </div>)))}</div>
    </div> 
   );
 }
