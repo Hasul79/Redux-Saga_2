@@ -10,13 +10,13 @@ function App() {
     <div className='App'>
        <button onClick={() => dispatch(getUsersFetch())}>Get Users</button> 
       
-      <div>Users: {users.map((user => (
-      <div>{ user.id}.
-           {user.name}․․
-           {/* [{ user.username}__
-           { user.email}__
-           { user.phone}] */}
-           </div>)))}</div>
+      <div><h1>Users:</h1> {users.map((user => (
+      <table><th><u>id:-{user.id }</u></th>
+           <tr><b>name:</b>-{user.name}</tr>
+           <tr><b>username:</b>- { user.username}</tr>
+          <tr><b>email:</b>-{user.email}</tr>
+           <tr><b>phone:</b>- {user.phone}</tr>
+           </table>)))}</div>
    </div> 
   );
 }
